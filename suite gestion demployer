@@ -1,0 +1,33 @@
+package gestionemploye;
+//Tache 1/2
+
+public class Employe {
+    private String nom;
+    private double salaire;
+    private String dateEmbauche;
+
+    public Employe(String nom, double salaire, String dateEmbauche) {
+        this.nom = nom;
+        this.salaire = salaire;
+        this.dateEmbauche = dateEmbauche;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+    public double getSalaire() {
+        return salaire;
+    }
+    public void setSalaire(double salaire) {
+        this.salaire = salaire;
+    }
+    public String getDateEmbauche() {
+        return dateEmbauche;
+    }
+    public void setDateEmbauche(String dateEmbauche) {
+        this.dateEmbauche = dateEmbauche;
+    }
+}
