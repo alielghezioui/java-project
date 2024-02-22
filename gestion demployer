@@ -1,0 +1,29 @@
+package gestionemploye;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Entrez le nom de l'employé:");
+        String nom = scanner.nextLine();
+
+        System.out.println("Entrez le salaire de l'employé:");
+        double salaire = scanner.nextDouble();
+
+        scanner.nextLine(); // Consume newline character left by nextDouble()
+
+        System.out.println("Entrez la date d'embauche de l'employé (format: JJ/MM/AAAA):");
+        String dateEmbauche = scanner.nextLine();
+        Employe employe = new Employe(nom, salaire, dateEmbauche);
+        System.out.println("\nInformations de l'employé:");
+        System.out.println("Nom: " + employe.getNom());
+        System.out.println("Salaire: " + employe.getSalaire());
+        System.out.println("Date d'embauche: " + employe.getDateEmbauche());
+
+
+
+        // Close scanner
+        scanner.close();
+    }
+}
